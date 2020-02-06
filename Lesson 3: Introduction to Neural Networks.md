@@ -92,11 +92,11 @@ There are notes created by our fellow scholars. You can refer to these notes thr
         
   repeat the trick until it is equal or greater than 0 and count how many steps you did
 
-**Q15: Why is that we can’t use values such as 0, 1 and 2 for classifying the animal as Duck, Walrus or Beaver? Why does this assume dependencies between classes?**
+**Q14: Why is that we can’t use values such as 0, 1 and 2 for classifying the animal as Duck, Walrus or Beaver? Why does this assume dependencies between classes?**
 Answered by: @Carlo David
 We can't say 0 = Duck, 1 = Walrus, 2 = Beaver, because our model think that a high number is better than a lower number, its like telling the model Beaver is better than Walrus, and Walrus is better than Duck. So we want to avoid that, instead we perform one hot encoding. It tries to avoid the natural ordered relationships, because our model will naturally give the higher numbers with higher weights.
 
-**Q16: When and why is One-Hot-Encoding used?**
+**Q15: When and why is One-Hot-Encoding used?**
 -Quick answer: @Nicolas Remerscheid
 Used for multi-class-classification (non-linear).
 Background: A multic-class-classifier can be viewed as the combination of seperate single classifiers: One-Vs-All
@@ -107,13 +107,13 @@ What is the solution?: The one value indicating the correct class by a number fr
 --> I.e.: if y1 = 3 and there would be 5 different possible classes it has to be converted to y1 = [0, 0, 1, 0, 0];
 - [Additional Ressources](https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159)
 
-**Q17: A little terminology question: In the video the instructor uses the terms error-function and activation-function. Is it the same or is it something different?**
+**Q16: A little terminology question: In the video the instructor uses the terms error-function and activation-function. Is it the same or is it something different?**
 
 They are different:
 - An activation function is used to modify the value that a perceptron/node of NN outputs. So this function is applied in the output of each node in the feed forward phase.
 - An error function is used to measure how correct is a prediction compared to the real value of a label. This measure is used to modify the weights in a NN. So this function is used in the Backpropagation phase.
 
-**Q18: in exercise 3.26 - why the display function call parameters uses weight[0]/weight[1] , similarly for bias and both are negative? please help!
+**Q17: in exercise 3.26 - why the display function call parameters uses weight[0]/weight[1] , similarly for bias and both are negative? please help!
 
 Starting from the standard form equation of a line:
 
@@ -122,7 +122,7 @@ Starting from the standard form equation of a line:
         x1 = - w0 / w1 * x0 - b / w1
 There is a section about the standard form equation of line in khan academy https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations#x2f8bb11595b61c86:standard-form
 
-**Q19: Hi. Can someone please explain how do we multiply the weights when we have a matrix 3x2 and the inputs are 3x1?**
+**Q18: Hi. Can someone please explain how do we multiply the weights when we have a matrix 3x2 and the inputs are 3x1?**
 
                           W11^2             W11^1 W12^1 x1
                         y_hat = sigma  W21^2 sigma W21^2 W22^1 x2
@@ -132,13 +132,13 @@ This is to be understood in terms of functions of matrices (and compositions of 
 Apart from that you can take transpose of 3x2 matrix so that it is 2x3 and then you can multiply it with your 3x1 input
 
 
-**Q20: Is higher the dimensions in features of a model then more will be the accuracy in classification?**
+**Q19: Is higher the dimensions in features of a model then more will be the accuracy in classification?**
 One hot-encoding is obvious for target but for categories in features is done to get accuracy.
 In image of Lesson 3.35 there are four ranks under rank category, therefore I think one hot encode is implemented to get more accuracy with more dimensions.
 
 The increased number of features is a by-product of the hot-encoding applied to the original rank feature. Typically, the more dimensions the more problems, due to various factors: https://en.wikipedia.org/wiki/Curse_of_dimensionality, correlation between features https://www.kaggle.com/reisel/how-to-handle-correlated-features, lack of sufficient amount of data for the amount of features, ...
 
-**Q21: Why testing is required in model?**
+**Q20: Why testing is required in model?**
 
 - 1) training set is the dataset on which you train your model
 - 2) validation dataset is the dataset which is used to tune the hyper parameters of our model so that it generalizes better. More like a model validator
@@ -147,7 +147,7 @@ The increased number of features is a by-product of the hot-encoding applied to 
 In order to tune the performance of the model one of the methods is to further split the training set into the training set proper and a validation set. Then you tune the performance of the model using the validation set, but the performance on the test set must be evaluated only once. See https://machinelearningmastery.com/difference-test-validation-datasets/
 There is a funny comment by Yaser Abu-Mostafa https://www.youtube.com/watch?v=EZBUDG12Nr0#t=1h00m47s - there problem with "data snooping" into the test set, appears also when using popular datasets together with architectures designed by "others".
 
-**Q22: Is it OK to post code on github?**
+**Q21: Is it OK to post code on github?**
 
 Yes, this course repository https://github.com/udacity/deep-learning-v2-pytorch is released under the MIT license.
 On github, the proper way of "copying" another repository onto your gitub account is to make a fork https://help.github.com/en/github/getting-started-with-github/fork-a-repo, and keep working on the fork.

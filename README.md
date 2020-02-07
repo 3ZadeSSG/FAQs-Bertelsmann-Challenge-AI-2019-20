@@ -9,24 +9,16 @@ We would love to have contribution from other students as well and welcome all y
 
 # Content
 
-[About the course](Aboutthecourse.md)
+[Lesson 3: Introduction to Neural Networks](https://github.com/3ZadeSSG/FAQs-Bertelsmann-Challenge-AI-2019-20/blob/master/Lesson%203:%20Introduction%20to%20Neural%20Networks.md)
 
-[Lesson 2](lesson2.md)
+[Lesson 4-5: Introduction to PyTorch](https://github.com/3ZadeSSG/FAQs-Bertelsmann-Challenge-AI-2019-20/blob/master/Lesson%204-5:%20Introduction%20to%20PyTorch.md)
 
-[Lesson 4](lesson4.md)
+[Lesson 6-7 : Convolutional Neural Network & Style Transfer](https://github.com/3ZadeSSG/FAQs-Bertelsmann-Challenge-AI-2019-20/blob/master/Lesson%206-7%20:%20Convolutional%20Neural%20Network%20%26%20Style%20Transfer.md)
 
-[Lesson 5](lesson5.md)
+[Lesson 8-9 : Recurrent Neural Network & Sentiment Prediction RNN](https://github.com/3ZadeSSG/FAQs-Bertelsmann-Challenge-AI-2019-20/blob/master/Lesson%208-9%20:%20Recurrent%20Neural%20Network%20%26%20Sentiment%20Prediction%20RNN.md)
 
-[Lesson 6](lesson6.md)
-
-[Lesson 7](lesson7.md)
-
-[Lesson 8](lesson8.md)
-
-[Lesson 9](lesson9.md)
+[Lesson 10 : Deploying PyTorch Models](https://github.com/3ZadeSSG/FAQs-Bertelsmann-Challenge-AI-2019-20/blob/master/Lesson%2010%20:%20Deploying%20PyTorch%20Models.md)
 
 [Google Colab](Colab.md)
-
-[Lab Challenge](Lab.md)
 
 [Miscellaneous](Miscellaneous.md)
